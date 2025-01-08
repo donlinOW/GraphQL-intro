@@ -1,4 +1,4 @@
-
+const { UserList} = require('./FakeData');
 
 const resolvers = {
   Query: {
@@ -6,5 +6,5 @@ const resolvers = {
 
     }
   }
-  
+
 }
