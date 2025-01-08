@@ -10,7 +10,6 @@ const typeDefs = gql`
   }
 
   type Query {
-    users
-    friends
+    users: [User!]!
   }
 `
