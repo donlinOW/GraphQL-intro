@@ -1,5 +1,10 @@
 
 
 const resolvers = {
+  Query: {
+    users() {
+
+    }
+  }
   
 }
