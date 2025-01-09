@@ -24,6 +24,12 @@ const typeDefs = gql`
 
     # Get a user by id
     user(id: ID!): User!
+
+    # Get all movies
+    movies: [Movie!]!
+
+    # Get a movie by name
+    movie(name: String!): Movie!
   }
 
   enum Nationality {
