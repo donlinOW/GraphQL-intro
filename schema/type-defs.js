@@ -37,7 +37,7 @@ const typeDefs = gql`
     name: String!
     username: String!
     age: Int = 18
-    nationality: Nationality!
+    nationality: Nationality
   }
 
   type Mutation {
