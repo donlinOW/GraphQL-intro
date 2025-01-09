@@ -12,7 +12,11 @@ const typeDefs = gql`
   }
 
   type Query {
+    # Get all users
     users: [User!]!
+
+    # Get a user by id
+    user(id: ID!): User!
   }
 
   enum Nationality {
