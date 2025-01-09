@@ -3,6 +3,8 @@ const _ = require("lodash");
 
 const resolvers = {
   Query: {
+
+    // user resolvers
     users: () => {
       return UserList;
     },
@@ -11,6 +13,8 @@ const resolvers = {
       const user = _.find(UserList, { id: Number(id) });
       return user;
     },
+
+    // movie resolvers
     movies: () => {
       return MovieList;
     },
