@@ -28,7 +28,19 @@ const resolvers = {
     favoriteMovies: () => {
       return _.filter(MovieList, (movie) => movie.yearOfPublication > 2000 && movie.yearOfPublication < 2010);
     },
-  }
+  },
+
+  Mutation: {
+    createUser: (parent, args) => {
+      const user = args.input;
+
+      // here should put logic for inserting into some database table
+      const lastId = UserList[UserList.length - 1].id;
+      user.id = lastId + 1;
+      UserList.push(user);
+      return user;
+    },
+  },
 };
 
 module.exports = { resolvers };

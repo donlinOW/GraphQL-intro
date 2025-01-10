@@ -37,11 +37,11 @@ const typeDefs = gql`
     name: String!
     username: String!
     age: Int = 18
-    nationality: Nationality
+    nationality: Nationality = BRAZIL
   }
 
   type Mutation {
-    createUser(input: CreateUserInput!): User!
+    createUser(input: CreateUserInput!): User
   }
 
   enum Nationality {
